@@ -1,0 +1,61 @@
+body{
+    background-color: black;
+}
+
+ main::after{
+    content:"";
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height:100vh ;
+    background: linear-gradient(-233deg, #000 40%, rgba(0,0,0) 65%) no-repeat;
+    width:80 vw;
+}
+
+ main .personagem{
+    display: none;
+    height: 100vh;
+}
+
+main .personagem.selecionado{
+    display: block;
+}
+
+main .personagem .imagem{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.conteudo{
+    position: absolute;
+    left: 120px;
+    top:0 ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    max-width: 380px;
+}
+
+.conteudo .nome-personagem{
+    color: #ffffff;
+    font-size: 48px;
+    font-family: "Secular One";
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.conteudo .descricao{
+    color: #ffffff;
+    font-family: "Rubik";
+    line-height: 24px;
+}
+
+.conteudo .logo{
+    background-image: url("../imagens/one-piece-logo.png");
+    width: 230px;
+    height: 100px;
+    background-size: cover;
+    margin-bottom: 35px;
+}
